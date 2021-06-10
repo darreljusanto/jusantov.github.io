@@ -7,6 +7,7 @@
 .popup .popuptext {
     visibility: hidden;
     width: 13vw;
+    height:auto;
     background-color: #9CF278;
     color: #000;
     text-align: center;

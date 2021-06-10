@@ -143,6 +143,7 @@ ul li a:hover{
 
 .column img{
     height: 32vh;
+    width:auto;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -218,6 +219,7 @@ hr{
 .left img{
     float: left;
     width: 14vw;
+    height:auto;
 }
 
 .left img:hover{
