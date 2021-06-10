@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Standard Office Chair | Image Business Furniture</title>
-    <link rel  = "stylesheet" type = "text/css" href = "styles.css">
+    <link rel  = "stylesheet" type = "text/css" href = "layout.css">
+    <link rel  = "stylesheet" type = "text/css" href = "typography.css">
+    <link rel  = "stylesheet" type = "text/css" href = "popups.css">
     <link rel = "stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <div class= "main1">
         <ul>
@@ -28,7 +31,7 @@
                 </button>
             </li>
             <li>
-                <button>
+                <button onclick="window.location.href= 'cart.html'">
                     <i class="fa fa-shopping-cart"
                     style="font-size:22px; color: #000">
                     </i>
@@ -44,7 +47,6 @@
 </div>
        </form>
 </div>
-</header>
 
 <div class ="products">
     <a>Chairs & Seating > Standard Office Chair</a>
@@ -62,7 +64,19 @@
 </h6>
 
 <div class="middle">
-    <button style ="width: 1380px;">Add to Cart</button>
+    <div class="popup"> 
+        <button style ="width: 1380px; height: 60px; font-size: 15px;" onclick="myFunction()">ADD TO CART</button> 
+        <span class="popuptext" id="myPopup">
+            <a style="font-size:16px; font-weight: 500;">Succesfully added to cart</a>
+            <b style="font-size:14px; text-decoration: underline; font-weight: 400;" onclick="window.location.href= 'cart.html'">View Cart Here</b>
+        </span>
+    </div> 
+    <script>
+        function myFunction() {
+          var popup = document.getElementById("myPopup");
+          popup.classList.toggle("show");
+        }
+    </script>
 </div>
 
 <div class="products">
@@ -71,28 +85,28 @@
 
 <hr>
 
-<div class="allc" style="font-size: 16px; padding-top: 40px; font-weight: 500;">
+<div class="allc" style="font-size: 15px; padding-top: 40px; font-weight: 500;">
     <a>Product details</a>
     <b>></b>
 </div>
 
 <hr>
 
-<div class="allc" style="font-size: 16px; padding-top: 60px; font-weight: 500;">
+<div class="allc" style="font-size: 15px; padding-top: 60px; font-weight: 500;">
     <a>Materials</a>
     <b>></b>
 </div>
 
 <hr>
 
-<div class="allc" style="font-size: 16px; padding-top: 40px; font-weight: 500;">
+<div class="allc" style="font-size: 15px; padding-top: 40px; font-weight: 500;">
     <a>Reviews (0)</a>
     <b>></b>
 </div>
 
 <hr>
 
-<h6 style="font-size: 20px; padding-top:60px">Related products</h6>
+<h6 style="font-size: 22px; padding-top:60px">Related products</h6>
 
 <div class= "row">
     <div class= "column">
@@ -124,6 +138,30 @@
 <div class="middle">
     <button>See More</button>
 </div>
-    
+
+<h5>
+    <p onclick="window.location.href= 'index.html'">Home</p>
+    <p>About Us</p>
+    <p>Contact Us</p>
+</h5>
+
+<div class="together">
+    <button>
+        <i class="fa fa-facebook"
+        style = "font-size: 18px;">
+        </i>
+    </button>
+    <button>
+        <i class="fa fa-twitter"
+        style = "font-size: 18px;">
+        </i>
+    </button>
+    <button>
+        <i class="fa fa-instagram"
+        style = "font-size: 18px;">
+        </i>
+    </button>
+</div>
+
 </body>
 </html>
